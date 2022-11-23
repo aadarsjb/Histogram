@@ -24,7 +24,7 @@ data_list = list(
   "Sacramento Housing" = Sacramento
 )
 
-# 1.0 USER INTERFACE ----
+#USER INTERFACE ----
 ui <- navbarPage(
   
   title = "Data Explorer",
@@ -39,9 +39,6 @@ ui <- navbarPage(
       sidebarPanel(
         width = 3,
         h1("Explore a Dataset"),
-        
-        # Requires Reactive Programming Knowledge
-        # - Taught in Shiny Dashboards (DS4B 102-R)
         shiny::selectInput(
           inputId = "dataset_choice",
           label   = "Data Connection",
